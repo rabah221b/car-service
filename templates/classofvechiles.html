@@ -1,0 +1,18 @@
+{% extends "base.html" %}
+
+{% block title %}
+class
+{% endblock  %}
+
+{% block content %}
+<h1 class="text-center">Type of Class</h1>
+<hr>
+{% for c in clsovhls  %}
+  
+
+<div class="mx-auto w-50 bg-info text-center text-white p-3 my-3 border border-danger rounded ">
+    <h3>{{c.class_name}}</h3>
+    <p>{{c.class_description}}</p>
+</div>
+{% endfor %} 
+{% endblock  %}

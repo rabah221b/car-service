@@ -1,0 +1,23 @@
+{% extends "base.html" %}
+
+{% block title %}
+vechile
+{% endblock  %}
+
+{% block content %}
+<h1 style="font-weight: lighter; color:gray; text-align:center;">Vehicle <span style="color: rgb(237, 136, 153); font-weight:bolder ">Info</span></h1>
+
+{% for v in vechs %}
+<div style="text-align: center; color:deeppink">
+<h1 style="text-decoration: underline;">{{v.vehicle_name}}</h1>
+<img src="{{v.vehicle_img.url}}" style="width: 250px;" alt="">
+<p>{{v.vehicle_cc}}</p>
+<h3>{{v.vehicle_price}} RS</h3>
+<hr style="color: deeppink;">
+
+</div>
+
+
+{% endfor %}
+
+{% endblock  %}

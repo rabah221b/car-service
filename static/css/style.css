@@ -1,0 +1,12 @@
+#bar{
+    color: yellow;
+}
+#bar:hover{
+    background-color: grey 50px;
+    color: red;
+    transform: scale(1.6);
+    border-radius: 10px;
+    border: 2px solid yellow;
+}
+
+
